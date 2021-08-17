@@ -1,0 +1,68 @@
+image: "tbcp/datascience-python"
+
+before_script:
+    - make init-requirements
+
+stages:
+    - Static Analysis
+    - Unit Testing
+    - Building
+    - Function Testing
+    - Deployment
+    - Documenting
+
+types:
+    stage: Static Analysis
+    script: [make types]
+    allow_failure: true
+
+linting:
+    stage: Static Analysis
+    script: [make lint]
+    allow_failure: true
+
+secure-code:
+    stage: Static Analysis
+    script: [make sast]
+    allow_failure: false
+
+unittests:
+    stage: Unit Testing
+    script: [make unittests]
+    allow_failure: false
+
+build:
+    stage: Building
+    script: [make build]
+    artifacts:
+        paths: [dist]
+    only:
+        - develop
+        - main
+
+gitlab:
+    stage: Deployment
+    script: [make deploy]
+    artifacts:
+        paths: [dist]
+    only:
+        - develop
+        - main
+
+pypi:
+    stage: Deployment
+    script: [make release]
+    artifacts:
+        paths: [dist]
+    only:
+        - main
+
+docs:
+    stage: Documenting
+    script:
+        - rm -rf public && mkdir public
+        - cp -r docs/* public/ && cp -r README.md public/_media/
+    artifacts:
+        paths: [public]
+        expire_in: 10 seconds
+    allow_failure: true

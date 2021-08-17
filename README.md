@@ -1,89 +1,173 @@
-# Data processing TXT-Files Python
+<a href="https://bootcamp-project.com/" target="_blank"><img src="https://bootcamp-project.com/images/logo.png" align="right" height="200" /></a>
 
+<h1 align="center">Data processing Text-Files Python</h1>
 
+<div align="center">
+![security: bandit](https://img.shields.io/badge/security-bandit-yellow.svg?style=for-the-badge)
+![PyPI](https://img.shields.io/pypi/v/processing-txt-data?style=for-the-badge)
+![PyPI - Status](https://img.shields.io/pypi/status/processing-txt-data?style=for-the-badge)
+![PyPI - Implementation](https://img.shields.io/pypi/implementation/processing-txt-data?style=for-the-badge)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/processing-txt-data?style=for-the-badge)
+![PyPI - Wheel](https://img.shields.io/pypi/wheel/processing-txt-data?style=for-the-badge)
+![PyPI - License](https://img.shields.io/pypi/l/processing-txt-data?style=for-the-badge)
+![Bootcamp Project: Data processing Text-Files Python](https://img.shields.io/badge/Bootcamp-Project-blue?style=for-the-badge)
+</div>
 
-## Getting started
+## 👉 About 👈
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+**Minimum Viable Product**:
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+### 😎 Built With 😎
 
-## Add your files
+- [pytest-dev/pytest](https://github.com/pytest-dev/pytest/)
+- [PyCQA/pylint](https://github.com/PyCQA/pylint)
+- [PyCQA/bandit](https://github.com/PyCQA/bandit)
+-
+## 📖 Getting Started 📖
 
-- [ ] [Create](https://gitlab.com/-/experiment/new_project_readme_content:bc2bdcd4f0f950a744fe104d1ea4f97a?https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://gitlab.com/-/experiment/new_project_readme_content:bc2bdcd4f0f950a744fe104d1ea4f97a?https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://gitlab.com/-/experiment/new_project_readme_content:bc2bdcd4f0f950a744fe104d1ea4f97a?https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
+### ✋ Prerequisites ✋
 
+**Change the project-specific attributes.** See [TODO](TODO.md) for more information.
+
+### 💪 Installation 💪
+
+```bash
+pip install --user processing-txt-data
 ```
-cd existing_repo
-git remote add origin https://gitlab.com/the-bootcamp-project/packages/data-science/txt-processing-python.git
-git branch -M main
-git push -uf origin main
+
+## 🚀 Usage 🚀
+
+### 🤓 Static Analysis 🤓
+
+```bash
+$ make types
 ```
 
-## Integrate with your tools
+```bash
+$ make lint
+```
 
-- [ ] [Set up project integrations](https://gitlab.com/-/experiment/new_project_readme_content:bc2bdcd4f0f950a744fe104d1ea4f97a?https://docs.gitlab.com/ee/user/project/integrations/)
+```bash
+$ make sast
+```
 
-## Collaborate with your team
+```yml
+# .gitlab.ci.yml
 
-- [ ] [Invite team members and collaborators](https://gitlab.com/-/experiment/new_project_readme_content:bc2bdcd4f0f950a744fe104d1ea4f97a?https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://gitlab.com/-/experiment/new_project_readme_content:bc2bdcd4f0f950a744fe104d1ea4f97a?https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://gitlab.com/-/experiment/new_project_readme_content:bc2bdcd4f0f950a744fe104d1ea4f97a?https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Automatically merge when pipeline succeeds](https://gitlab.com/-/experiment/new_project_readme_content:bc2bdcd4f0f950a744fe104d1ea4f97a?https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
+types:
+    stage: Static Analysis
+    script: [make types]
+    allow_failure: true
 
-## Test and Deploy
+linting:
+    stage: Static Analysis
+    script: [make lint]
+    allow_failure: true
 
-Use the built-in continuous integration in GitLab.
+secure-code:
+    stage: Static Analysis
+    script: [make sast]
+    allow_failure: false
+```
 
-- [ ] [Get started with GitLab CI/CD](https://gitlab.com/-/experiment/new_project_readme_content:bc2bdcd4f0f950a744fe104d1ea4f97a?https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing(SAST)](https://gitlab.com/-/experiment/new_project_readme_content:bc2bdcd4f0f950a744fe104d1ea4f97a?https://docs.gitlab.com/ee/user/application_security/sast/)
+### 🧐 Unit Testing 🧐
 
-***
+```bash
+$ make unittests
+```
 
-# Editing this README
+```yml
+# .gitlab.ci.yml
 
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!).  Thank you to [makeareadme.com](https://gitlab.com/-/experiment/new_project_readme_content:bc2bdcd4f0f950a744fe104d1ea4f97a?https://www.makeareadme.com/) for this template.
+unittests:
+    stage: Unit Testing
+    script: [make unittests]
+    allow_failure: false
+```
 
-## Suggestions for a good README
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
+### 🤩 Building 🤩
 
-## Name
-Choose a self-explaining name for your project.
+```bash
+$ make build
+```
 
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
+```yml
+# .gitlab.ci.yml
 
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
+build:
+    stage: Building
+    script: [make build]
+    artifacts:
+        paths: [dist]
+    only:
+        - develop
+        - main
+```
 
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
+### 🥳 Deployment 🥳
 
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
+```bash
+$ make deploy
+```
 
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
+```yml
+# .gitlab.ci.yml
 
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
+gitlab:
+    stage: Deployment
+    script: [make deploy]
+    artifacts:
+        paths: [dist]
+    only:
+        - develop
+        - main
 
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
+pypi:
+    stage: Deployment
+    script: [make release]
+    artifacts:
+        paths: [dist]
+    only:
+        - main
+```
 
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
+_For more examples, please refer to the [Documentation](https://python.rtfm.page)_
 
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
+## ⭐️ Features ⭐️
 
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
+- [x] Using **pyTest** as a paradigm for test-driven development
+- [x] Using **Bandit** as static application security testing code analyzer
+- [x] Automatic build and deploy on **GitLab** and **PyPi** Packages Regestries
 
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
+## 📑 Changelog 📑
 
-## License
-For open source projects, say how it is licensed.
+See [CHANGELOG](CHANGELOG) for more information.
 
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+## 📋 Roadmap 📋
 
+- [ ] Implement Toml Config Parser as a Settings Mechanism
+
+See the [open issues](https://gitlab.com/the-bootcamp-project/packages/data-science/txt-processing-python/-/issues) for a list of proposed features (and known issues).
+
+## 🤝 Contribute 🤝
+
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1. Please read the [contribution guidelines](docs/_media/code_of_conduct.md) first.
+2. Fork the Project
+3. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+4. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+5. Push to the Branch (`git push origin feature/AmazingFeature`)
+6. Open a Pull Request
+
+## 📜 License 📜
+
+Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
+
+## 💌 Contact 💌
+
+[Bootcamp contributors](https://bootcamp-project.com/) - `contributors` @ `bootcamp-project` .com
+
+## 🏆 Acknowledgements 🏆
+
+Thanks for these awesome resources that were used during the development of the **Bootcamp Project: Data processing Text-Files Python**:

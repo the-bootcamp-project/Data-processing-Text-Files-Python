@@ -6,7 +6,7 @@
     "PACKAGE_KEYWORDS": "Data processing Text-Files Python",
     "PROJECT_URL": "https://gitlab.com/the-bootcamp-project/packages/data-science/txt-processing-python",
     "PROJECT_URLS": {
-        "Documentation": "https://python.rtfm.page",
+        "Documentation": "https://processing-text-files-python.rtfm.page",
         "Repository": "https://gitlab.com/the-bootcamp-project/packages/data-science/txt-processing-python.git",
         "Bug Tracker": "https://gitlab.com/the-bootcamp-project/packages/data-science/txt-processing-python/-/issues",
         "Docker Hub": "https://hub.docker.com/u/tbcp",

@@ -1,6 +1,6 @@
 <a href="https://bootcamp-project.com/" target="_blank"><img src="https://bootcamp-project.com/images/logo.png" align="right" height="200" /></a>
 
-<h1 align="center">Data processing Text-Files Python</h1>
+<h1 align="center">Processing Text-Data with Python</h1>
 
 <div align="center">
 ![security: bandit](https://img.shields.io/badge/security-bandit-yellow.svg?style=for-the-badge)
@@ -22,7 +22,7 @@
 - [pytest-dev/pytest](https://github.com/pytest-dev/pytest/)
 - [PyCQA/pylint](https://github.com/PyCQA/pylint)
 - [PyCQA/bandit](https://github.com/PyCQA/bandit)
--
+
 ## 📖 Getting Started 📖
 
 ### ✋ Prerequisites ✋
@@ -131,7 +131,7 @@ pypi:
         - main
 ```
 
-_For more examples, please refer to the [Documentation](https://python.rtfm.page)_
+_For more examples, please refer to the [Documentation](https://processing-text-files-python.rtfm.page)_
 
 ## ⭐️ Features ⭐️
 
@@ -170,4 +170,4 @@ Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
 
 ## 🏆 Acknowledgements 🏆
 
-Thanks for these awesome resources that were used during the development of the **Bootcamp Project: Data processing Text-Files Python**:
+Thanks for these awesome resources that were used during the development of the **Bootcamp Project: Processing Text-Data with Python**:

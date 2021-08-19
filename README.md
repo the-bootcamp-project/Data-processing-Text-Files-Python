@@ -3,14 +3,14 @@
 <h1 align="center">Processing Text-Data with Python</h1>
 
 <div align="center">
-![security: bandit](https://img.shields.io/badge/security-bandit-yellow.svg?style=for-the-badge)
-![PyPI](https://img.shields.io/pypi/v/processing-txt-data?style=for-the-badge)
-![PyPI - Status](https://img.shields.io/pypi/status/processing-txt-data?style=for-the-badge)
-![PyPI - Implementation](https://img.shields.io/pypi/implementation/processing-txt-data?style=for-the-badge)
-![PyPI - Python Version](https://img.shields.io/pypi/pyversions/processing-txt-data?style=for-the-badge)
-![PyPI - Wheel](https://img.shields.io/pypi/wheel/processing-txt-data?style=for-the-badge)
-![PyPI - License](https://img.shields.io/pypi/l/processing-txt-data?style=for-the-badge)
-![Bootcamp Project: Data processing Text-Files Python](https://img.shields.io/badge/Bootcamp-Project-blue?style=for-the-badge)
+<img src="https://img.shields.io/badge/security-bandit-yellow.svg?style=for-the-badge"></img>
+<img src="https://img.shields.io/pypi/v/processing-txt-data?style=for-the-badge"></img>
+<img src="https://img.shields.io/pypi/status/processing-txt-data?style=for-the-badge"></img>
+<img src="https://img.shields.io/pypi/implementation/processing-txt-data?style=for-the-badge"></img>
+<img src="https://img.shields.io/pypi/pyversions/processing-txt-data?style=for-the-badge"></img>
+<img src="https://img.shields.io/pypi/wheel/processing-txt-data?style=for-the-badge"></img>
+<img src="https://img.shields.io/pypi/l/processing-txt-data?style=for-the-badge"></img>
+<img src="https://img.shields.io/badge/Bootcamp-Project-blue?style=for-the-badge"></img>
 </div>
 
 ## 👉 About 👈
